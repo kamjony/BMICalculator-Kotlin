@@ -33,14 +33,14 @@ class MainActivity : AppCompatActivity() {
         return when {
             weight.isNullOrEmpty() -> {
                 Toast.makeText(this, "Weight is empty", Toast.LENGTH_LONG).show()
-                return false
+                false
             }
             height.isNullOrEmpty() -> {
                 Toast.makeText(this, "Height is empty", Toast.LENGTH_LONG).show()
-                return false
+                false
             }
             else -> {
-                return true
+                true
             }
         }
     }
